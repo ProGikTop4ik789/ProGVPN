@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Кнопка-градиент: зелёный (для действий типа «Взять») -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:startColor="#15803d"
+                android:endColor="#14532d"
+                android:type="linear" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:startColor="#16a34a"
+                android:endColor="#15803d"
+                android:type="linear" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+</selector>

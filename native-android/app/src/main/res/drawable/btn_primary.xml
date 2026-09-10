@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Кнопка-градиент: синий -> тёмно-фиолетовый (как в Windows-версии) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:startColor="#172f8c"
+                android:endColor="#4c1d95"
+                android:type="linear" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:startColor="#1e40af"
+                android:endColor="#6d28d9"
+                android:type="linear" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+</selector>

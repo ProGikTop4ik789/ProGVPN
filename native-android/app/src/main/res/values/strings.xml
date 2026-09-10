@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProGVPN</string>
+    <string name="subtitle">WireGuard клиент — встроенный VPN</string>
+    <string name="url_hint">Ссылка на .conf (https://…)</string>
+    <string name="take_url">Взять</string>
+    <string name="pick_file">Выбрать .conf из файла</string>
+    <string name="connect">Подключить</string>
+    <string name="disconnect">Отключить</string>
+    <string name="config_not_set">Конфиг не задан</string>
+</resources>

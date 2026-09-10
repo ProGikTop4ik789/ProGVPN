@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'pro.progvpn.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "pro.progvpn.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        // Библиотека WireGuard использует Java 8 features -> нужен desugaring
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+}
+
+dependencies {
+    // Официальная библиотека туннеля WireGuard (Apache-2.0), Maven Central
+    implementation 'com.wireguard.android:tunnel:1.0.20260102'
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+}
