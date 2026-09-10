@@ -1,0 +1,9 @@
+# ProGVPN — зависимости
+#
+# server.py / client.py / udp_relay.py используют ТОЛЬКО стандартную библиотеку.
+# Единственная внешняя зависимость — Pillow для Windows-GUI (client_gui.py).
+
+pillow>=10.0.0
+
+# --- Для сборки Windows .exe (опционально) ---
+# pyinstaller>=6.0
